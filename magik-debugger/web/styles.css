@@ -1,0 +1,257 @@
+#debugger {
+    min-width: 1024px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.stack-frame span.Java {
+  color: orange;
+}
+
+.stack-frame span.Magik {
+  color: blue;
+}
+
+.breakpoint-name {
+  padding-left: 5px;
+}
+
+.thread-info span.label {
+  font-weight: bold;
+  padding-right: 5px;
+  color: black;
+}
+
+.source-code .line-number {
+  color: #777;
+  padding-right: 2em;
+  text-align: right;
+}
+
+a.method-link {
+  cursor: pointer;
+}
+
+.debugger-container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 10px 15px 10px;
+  height: 100vh;
+}
+
+.column {
+  padding: 0 5px 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-column {
+  flex: 2 4;
+  max-width: 66%;
+}
+
+.side-column {
+  flex: 1 0;
+  min-width: 33%;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.tabbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+tr.local-invalid {
+  color: grey;
+}
+
+tr.local-slot {
+  color: red;
+}
+
+.source-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+tr.current-line {
+  background-color: yellow;
+}
+
+.error-box {
+  position: absolute;
+  float: left;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: red;
+  border-color: black;
+  color: white;
+  opacity: 0.5;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.error-box .close-container {
+  float: right;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.error-box .close {
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  top: 0;
+  left: 14px;
+  transform-origin: bottom;
+  border-radius: 1px;
+  background-color: black;
+  opacity: 1;
+  animation-duration: 3s;
+  animation-name: spin;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-box p {
+  text-align: center;
+}
+
+a.line-number-breakpoint {
+  cursor: pointer;
+  color: black;
+}
+
+a.line-number-breakpoint:hover {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+td.has-breakpoint {
+  color: white;
+  background-color: green;
+}
+
+td.has-breakpoint a.line-number-breakpoint {
+  color: white;
+}
+
+td.has-breakpoint a.line-number-breakpoint:hover {
+  color: white;
+}
+
+.evaluation-button {
+  float: right;
+}
+
+.evaluation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.evaluation pre {
+  flex: 1 0;
+}
+
+.evaluation hr {
+  width: 100%;
+}
+
+.evaluation .evaluation-text {
+  flex: 0 1;
+}
+
+.jump-to-highlight {
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-right: 22px;
+  margin-top: 4px;
+}
+
+.source {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex: 1 0;
+}
+
+.source pre {
+  flex: 1 0;
+}
+
+option.suspended {
+  background-color: palevioletred;
+}
+
+div.checkbox {
+  margin: 0px;
+}
+
+.spinInfinitly {
+  animation-duration: 1500ms;
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.stepControlBtn {
+  min-width: 65px;
+}
+
+.stopLoadingBtn {
+  min-width: 195px;
+}
+
+.threadSteppingGlyphicon {
+  margin-right: 5px;
+}
+
+.breakpoint {
+  display: inline-flex;
+}
+
+.breakpoint .btn-group {
+  display: flex;
+  flex: 0 1;
+}
+
+.breakpoint .breakpoint-name {
+  display: flex;
+  flex: 1 auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+.breakpoint .conditional {
+  display: flex;
+  flex: 0 1;
+}
