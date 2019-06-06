@@ -123,16 +123,28 @@ In order for the source code to be located, environment variables have to be def
 Product | Variable name
 ---------|----------
  Core product | SMALLWORLD_GIS
- Other products | These are in the format &lt;UPPERCASE PRODUCT NAME&gt;_DIR. For example, for the PNI product, the variable would be named:**PNI_DIR**
+ Other products | These are in the format &lt;UPPERCASE PRODUCT NAME&gt;_DIR
+ 
+ Examples:
+ PNI_DIR
+ PNI_FTTH_DIR
+ SW_DM_DIR
+ SCHEMATICS_DIR
+ SW_COMMON_OFFICE_DIR
+ SW_ELECTRIC_OFFICE_DIR
+ SW_ELECTRIC_OFFICE_LP_DIR
+ SW_GAS_DIST_OFFICE_DIR
+ 
+Assuming that the Debug client source is in c:\magik-debugger, as in the install example above
 
-Assuming that the Debug client source is in c:\magik\debugger, as in the install example above
-
-> cd c:\magik-debugger
-> c:\magik\debugger >npm start localhost:32000
-> \> magik.debugger@0.1.1 start c:\magik-debugger
-> \> node server.js "localhost:32000"
-> **Listening on port 4123**
-> **Connected to agent version 14**
+```shell
+cd c:\magik-debugger
+c:\magik-debugger >npm start localhost:32000
+> magik.debugger@0.1.1 start c:\magik-debugger
+> node server.js "localhost:32000"
+Listening on port 4123
+Connected to agent version 14
+```
 
 The Debug Agent communicates with the Debug Client using a TCP/IP connection which by default has a port number of **32000**. This can be specified when starting up the debug client, as described in the previous section.
 
