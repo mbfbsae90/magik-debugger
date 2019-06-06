@@ -1,6 +1,6 @@
 # Smallworld 5 Magik debugger
 
-Copyright Information
+Copyright Informationx
 
 &copy; 2018 General Electric Company or its Affiliates
 
