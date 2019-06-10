@@ -82,7 +82,7 @@ Examples
 
 ## Windows
 
-> runalias.exe **-j -agentpath:%SMALLWORLD_GIS%\core\bin\x86\mda.dll** -a %SMALLWORLD_GIS%\..\cambridge_db\config\gis_aliases cambridge_db_open_no_auth
+> runalias.exe **-j -agentpath:%SMALLWORLD_GIS%\bin\x86\mda.dll** -a %SMALLWORLD_GIS%\..\cambridge_db\config\gis_aliases cambridge_db_open_no_auth
 
 ## Linux
 
@@ -114,7 +114,7 @@ Note that **-agentpath** also accepts an additional argument to specify the port
 
 Example:
 
-> %SMALLWORLD_GIS%\core\bin\x86\runalias.exe **-j -agentpath:%SMALLWORLD_GIS%\core\bin\x86\mda.dll=socket:20001** -a %SMALLWORLD_GIS%\electric_office\config\gis_aliases eo_suite_open
+> %SMALLWORLD_GIS%\core\bin\x86\runalias.exe **-j -agentpath:%SMALLWORLD_GIS%\bin\x86\mda.dll=socket:20001** -a %SMALLWORLD_GIS%\electric_office\config\gis_aliases eo_suite_open
 
 ## Starting the debug client in node.js
 
