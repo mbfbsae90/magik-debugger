@@ -58,7 +58,7 @@ There are 3 components.
 Item | Description | Prerequisites
 ---------|----------|---------
  Debug agent | This is shipped as a DLL (Windows: _mda.dll_) or shared library (Linux &amp; Solaris: _libmda.so_) | Smallworld 515 or later
- Debug client running in node.js | Available from [https://github.com/OpenSmallworld/magik-debugger](https://github.com/OpenSmallworld/magik-debugger). Clone or download the zip file and put in folder such as _c:\magik-debugger_| Minimum of node.js v8 required.
+ Debug client running in node.js | Available from [https://github.com/OpenSmallworld/magik-debugger](https://github.com/OpenSmallworld/magik-debugger). Clone or download the zip file and put in folder such as _c:\magik-debugger_| Minimum of node.js v8 required. Available from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
  Web-based GUI | Browser based | Chrome or FireFox browsers. Internet Explorer not recommended
 
 Note that the components can be co-located on the same host, or run from different hosts.
